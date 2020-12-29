@@ -1,0 +1,12 @@
+<!--pages/usersign/usersign.wxml-->
+<view class="wrapper">
+  <block wx:for="{{userSigin}}" wx:for-index="idx" wx:key="key">
+    <view class="ment">
+        <view class="ment-v">
+          <view class="ment-t">{{item.name}}</view>
+          <view class="ment-r">></view>
+        </view>
+      <view class="ment-d">{{item.date}}</view>
+    </view>
+  </block>
+</view>

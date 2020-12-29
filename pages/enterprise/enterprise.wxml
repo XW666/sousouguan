@@ -1,0 +1,34 @@
+<!--pages/enterprise/enterprise.wxml-->
+<view class="info">
+  <view class="contren-tit">关联企业</view>
+  <view class="seach" wx:if="{{isSeach}}" catchtap='switchTap'>
+    <icon class="icon-small" type="search" size="12"></icon>输入企业编码搜素
+  </view>
+   <view class="seach-h" wx:else>
+     <view class="seach-m">
+    <view class="seach-c">
+      <icon class="icon-small" type="search" size="12"></icon>
+    </view>
+          <input class="input" auto-focus value='{{seachValue}}' bindinput="intSeach" placeholder="搜素"></input>
+        </view>
+          <view class="seach-b" catchtap='closeTap' >取消</view>
+   </view>
+  <view class="enter-cen">
+    <view class="enter-m">
+      <view class="contren-h">邀请我的企业</view>
+      
+    </view>
+    <view class="enter-m">
+      <view class="contren-h">我在职的企业</view>
+      <block wx:for="{{enter2}}" wx:for-index="idx" wx:key="key">
+        <view class="enter-dom" data-id="{{item.id}}" catchtap="domTap">
+          {{item.name}}
+        </view>
+      </block>
+    </view>
+    <view class="enter-m">
+      <view class="contren-h">我已离职的企业</view>
+    </view>
+  </view>
+</view>
+

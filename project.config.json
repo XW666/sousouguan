@@ -1,0 +1,130 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.14.0",
+  "appid": "wx44ccde74dff18ca4",
+  "projectname": "sousouguan",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/entry/entry",
+          "pathName": "pages/entry/entry",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/info/info",
+          "pathName": "pages/info/info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/contact/contact",
+          "pathName": "pages/contact/contact",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/final/final",
+          "pathName": "pages/final/final",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/authen/authen",
+          "pathName": "pages/authen/authen",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sign/sign",
+          "pathName": "pages/sign/sign",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/enterprise/enterprise",
+          "pathName": "pages/enterprise/enterprise",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/statement/statement",
+          "pathName": "pages/statement/statement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/phone/phone",
+          "pathName": "pages/phone/phone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teach/teach",
+          "pathName": "pages/teach/teach",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

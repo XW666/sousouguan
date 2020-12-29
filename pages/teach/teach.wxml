@@ -1,0 +1,72 @@
+<view class="basic">
+  <view class="contren-h">教育经历</view>
+  <view class="contern-main">
+    <block wx:for="{{teachData}}" wx:for-index="idx" wx:key="key">
+      <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">学历</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{teachData[idx].education}}' bindinput="bindEducarInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">毕业院校</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{teachData[idx].graduated_school}}' bindinput="bindShoolInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">毕业专业</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{teachData[idx].graduate_major}}' bindinput="bindMajorInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+     <view class="center-section-title">
+          <label class="center-label">毕业时间</label> 
+        </view>
+        <picker mode="date" value="{{teachData[idx].graduation_time}}" data-index='{{idx}}'  bindchange="bindGradWork">
+          <view class="center-input {{teachData[idx].graduation_time ? '' : 'center-cor'}}">
+           {{teachData[idx].graduation_time ? teachData[idx].graduation_time : '请选择'}}
+          </view>
+        </picker>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">学习形式</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{teachData[idx].ways_of_learning}}' bindinput="bindWaysInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">毕业证书编号</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{teachData[idx].certificate_number}}' bindinput="bindCertInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">学位类型</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{teachData[idx].degree_type}}' bindinput="bindDegreeInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+    </block>
+    <view class="center-add">
+       <view class="center-add-btn" catchtap='addTeach'>添加工作经历</view>
+    </view>
+  </view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+  </view>

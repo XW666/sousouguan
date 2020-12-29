@@ -1,0 +1,14 @@
+<!--pages/signsucc/signsucc.wxml-->
+<view class="final">
+  <view class="icon-box">
+    <icon class="icon-box-img" type="success" size="83"></icon>
+    <view class="icon-box-ctn" >
+      <view class="icon-box-title">入职登记表签署成功</view>
+      <view class="icon-box-desc">HR在为您办理入职</view>
+    </view>
+  
+  </view>
+  <view class="center-f ">
+    <view class="center-btn" catchtap='nextTap'>返回切换企业</view>
+  </view>
+</view> 

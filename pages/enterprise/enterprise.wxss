@@ -1,0 +1,60 @@
+/* pages/enterprise/enterprise.wxss */
+.info{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.seach{
+  text-align: center;
+  border:1px solid rgb(94, 108, 210);
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  color: rgb(94, 108, 210);
+  line-height: 48rpx;
+  background-color: #f5f5f5;
+  margin-bottom: 20rpx;
+
+}
+.seach .icon-small{
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  margin-right: 10rpx;
+}
+.seach-c .icon-small{
+  position: relative;
+  top: 16%;
+}
+.seach-h{
+  display: flex;
+  background-color: #f5f5f5;
+ font-size: 32rpx;
+  line-height: 48rpx;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+.seach-m{
+  flex: 1;
+  display: inline-flex;
+  background-color: #fff;
+}
+.input{
+  flex: 1;
+  padding-top: 10rpx;
+}
+.seach-c{
+   padding: 0 10rpx;
+}
+.seach-b{
+  display: inline-block;
+  line-height: 70rpx;
+  color: #576B95;
+  padding: 0 10rpx;
+}
+.enter-m{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+.enter-dom{
+  margin-bottom: 10rpx;
+}

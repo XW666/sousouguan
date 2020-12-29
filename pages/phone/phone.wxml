@@ -1,0 +1,19 @@
+<view class="logs">
+  <view class="log-box">
+    <view class="log-content">
+      <view class="contren-tit">绑定手机号</view>
+      <view class="log-phone">
+          <view class="shuzi">86+</view>
+          <input class="input" value='{{phone}}' bindinput="int_phone" maxlength="11"></input>
+      </view>
+      <view class="log-pas">
+          <input class="input" value="{{phone_code}}" bindinput="int_yanzheng"></input>
+          <view class="yzm {{ifagain?'':'again'}}"  catchtap='ngetcode'>{{again_sec}}</view>
+          <!-- <view class="again" hidden='{{ifagain}}'></view> -->
+      </view>
+      <view class="btn" catchtap='nlogin'>
+        绑定
+      </view>
+    </view>
+  </view>
+</view>

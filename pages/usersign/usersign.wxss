@@ -1,0 +1,25 @@
+/* pages/usersign/usersign.wxss */
+.wrapper{
+  padding: 30rpx;
+}
+.ment{
+  padding:20rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #E8E8E8;
+}
+.ment-v{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.ment-t{
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.ment-r{
+  width: 60rpx;
+}
+.ment-d{
+  color: #8C8C8C
+}

@@ -1,0 +1,25 @@
+<!--accredit.wxml-->
+<view class="container">
+  <view class="main" wx:if="{{canIUse}}">
+    <view class="maia-img"></view>
+   <view class="main-tit">
+   嗖嗖管员工服务平台
+   </view>
+   <view class="main-ul">
+    <view class="li" wx:for="{{titList}}"  wx:key="key">
+            {{item}}
+    </view>
+   </view>
+   <view class="main-f"> 
+    <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="key">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+          </label>
+        </checkbox-group><text catchtap="change">《嗖嗖管个人用户协议》</text> 
+    <button class="main-f-btn" wx:if='{{!isHide}}'  bindtap='getUser'> 授权微信用户信息 </button> 
+    <button class="main-f-btn" wx:else  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权微信用户信息 </button>
+   </view>
+   
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>

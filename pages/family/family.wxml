@@ -1,0 +1,64 @@
+<view class="basic">
+  <view class="contren-h">家庭成员</view>
+  <view class="contern-main">
+    <block wx:for="{{familyData}}" wx:for-index="idx" wx:key="key">
+      <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">姓名</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{familyData[idx].name}}' bindinput="bindNameInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">关系</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{familyData[idx].relationship}}' bindinput="bindRelaInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+     <view class="center-section-title">
+          <label class="center-label">出生日期</label> 
+        </view>
+        <picker mode="date" value="{{familyData[idx].birthday}}" data-index='{{idx}}'  bindchange="bindBirthday">
+          <view class="center-input {{familyData[idx].birthday ? '' : 'center-cor'}}">
+           {{familyData[idx].birthday ? familyData[idx].birthday : '请选择'}}
+          </view>
+        </picker>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">联系电话</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{familyData[idx].phone}}' bindinput="bindPhoneInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">工作单位</label> 
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{familyData[idx].work}}' bindinput="bindWorkInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">任职职位</label> 
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{familyData[idx].position}}' bindinput="bindPositionInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+    </block>
+    <view class="center-add">
+       <view class="center-add-btn" catchtap='addTeach'>添加家庭情况</view>
+    </view>
+  </view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

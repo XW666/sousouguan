@@ -1,0 +1,14 @@
+<view class="info">
+  <view class="contren-tit">入职登记表</view>
+  <view class="info-cen">
+    <basic wx:if="{{checkIndex == 1}}" bind:parentEvent='onParentEventNext' inner="{{basicData}}"></basic>
+    <contact wx:if="{{checkIndex == 2}}" inner="{{contactData}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></contact>
+    <teach wx:if="{{checkIndex == 3}}" inner="{{teachData}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></teach>
+    <work wx:if="{{checkIndex == 4}}" inner="{{workData}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></work>
+    <family wx:if="{{checkIndex == 5}}" inner="{{familyData}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></family>
+    <wages wx:if="{{checkIndex == 6}}" inner="{{wagesData}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></wages>
+    <regisfrom wx:if="{{checkIndex == 7}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></regisfrom>
+    <enclosure wx:if="{{checkIndex == 8}}" bind:parentEvent='onParentEventNext' bind:parentPrevEvent='onParentPrevEvent'></enclosure>
+  </view>
+
+</view>

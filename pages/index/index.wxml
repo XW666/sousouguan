@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+
+
+  <view class="userinfo" wx:if="{{hasUserInfo}}">
+   <view class="user-cen">
+     <view class="user-cen-m">
+      <view class="user-img">
+         <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="user-tit">
+        <view class="user-name">{{userInfo.nickName}}</view>
+        <view class="user-enter">{{userInfo.province}}</view>
+      </view>
+    </view>
+    <view class="user-h">
+
+      我的员工档案
+    </view>
+   </view>
+   <view class="user-ul">
+     <view class="user-li">
+       <view class="user-li-m" catchtap='userSign'>
+        我的签署
+       </view>
+       
+     </view>
+     <view class="user-li">
+       
+       <view class="user-li-m">
+        我的工资条
+       </view>
+     </view>
+     <view class="user-li">
+      
+       <view class="user-li-m">
+        声请离职
+       </view>
+     </view>
+   </view>
+  </view>
+
+</view>

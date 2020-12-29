@@ -1,0 +1,33 @@
+<view class="basic">
+  <view class="contren-h">工资卡</view>
+  <view class="contern-main">
+      <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">工资卡号</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value='{{wagesData.payroll_card_number}}' bindinput="bindPayInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">工资卡开户城市</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value='{{wagesData.account_city}}' bindinput="bindCityInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">工资卡开户行</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value='{{wagesData.account_bank}}' bindinput="bindBankInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+  </view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

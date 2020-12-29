@@ -1,0 +1,118 @@
+<view class="basic">
+  <view class="contren-h">基本信息</view>
+  <view class="contern-main">
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">姓名</label> <text>（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{basicData.name}}" bindinput="bindPhoneInput" name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">性别</label> <text class="center-text">（必填）</text>
+        </view>
+        <!-- <view class="center-input" >
+            <input class="weui-input" value="{{basicData.gender}}" bindinput="bindGenderInput" name="input" placeholder="请输入" />
+        </view> -->
+        <radio-group class="center-group" bindchange="radioChange">
+        <view class="center-v" wx:for="{{radioItems}}"   wx:key="key">
+          <radio class="label-2-text" id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+          <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      </radio-group>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">证件类型</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{basicData.card_type}}" bindinput="bindCardTypeInput" name="input" placeholder="请输入" />
+        </view>
+        <!-- <picker mode="selector" bindchange="bindPickerChange" value="{{array[indexType].id}}"  range-key="{{'name'}}" range="{{array}}">
+          <view class="center-input">
+           {{array[indexType].name}}
+          </view>
+        </picker> -->
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">证件号码</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" type="idcard" value="{{basicData.card_code}}" bindinput="bindCardInput" name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">省份证有效期</label> 
+        </view>
+        <picker mode="date" value="{{basicData.id_card_validity}}"  bindchange="bindCard">
+          <view class="center-input {{basicData.id_card_validity ? '' : 'center-cor'}}">
+           {{basicData.id_card_validity ? basicData.id_card_validity : '请选择'}}
+          </view>
+        </picker>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">出生日期</label> <text class="center-text">（必填）</text>
+        </view>
+        <picker mode="date" value="{{basicData.birthday}}"  bindchange="bindBirthday">
+          <view class="center-input {{basicData.birthday ? '' : 'center-cor'}}">
+           {{basicData.birthday ? basicData.birthday : '请选择'}}
+          </view>
+        </picker>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">政治面貌</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{basicData.political_status}}" bindinput="bindPolInput" name="input" placeholder="请输入" />
+        </view>
+        <!-- <picker mode="selector" bindchange="bindPolChange" value="{{polArry[politicalIndex].id}}"  range-key="{{'name'}}" range="{{polArry}}">
+          <view class="center-input {{polArry[politicalIndex].name ? '' : 'center-cor'}}">
+           {{polArry[politicalIndex].name ? polArry[politicalIndex].name : '请选择'}}
+          </view>
+        </picker> -->
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">民族</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{basicData.nation}}" bindinput="bindNationInput" name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">户口性质</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{basicData.account_type}}" bindinput="bindAccountInput" name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">户籍地址</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{basicData.residence_address}}" bindinput="bindResInput" name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">首次参加工作日期</label> 
+        </view>
+        <picker mode="date" value="{{basicData.first_time_to_work}}"  bindchange="bindFirstWork">
+          <view class="center-input {{basicData.first_time_to_work ? '' : 'center-cor'}}">
+           {{basicData.first_time_to_work ? basicData.first_time_to_work : '请选择'}}
+          </view>
+        </picker>
+     </view>
+  </view>
+  <view class="center-f">
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

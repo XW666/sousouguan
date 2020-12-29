@@ -1,0 +1,8 @@
+<view class="basic">
+  <view class="contren-h">附件材料</view>
+  <view class="contern-main"></view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

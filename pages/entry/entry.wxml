@@ -1,0 +1,35 @@
+<view class="entry">  
+   <view class="contren-tit">入职登记表</view>
+   <view class="contren-p">
+     HR需要您填写 “入职登记表” 为您办理入职，入职登记表包含一下信息，需要的时间很长，需要您耐心填写。
+   </view>
+   <view class="entry-m">
+     <view class="entry-hr"></view>
+     <view class="entry-m-t">
+       <label>基本信息</label>
+       <view class="entry-m-h">包含员工姓名、证件号码、性别、生日等</view>
+     </view>
+     <view class="entry-m-t">
+       <label>联系信息</label>
+     </view>
+     <view class="entry-m-t">
+       <label>教育经历</label>
+     </view>
+     <view class="entry-m-t">
+       <label>工作经历</label>
+     </view>
+     <view class="entry-m-t">
+       <label>家庭成员</label>
+     </view>
+     <view class="entry-m-t">
+       <label>工资卡</label>
+     </view>
+     <view class="entry-m-t">
+       <label>入职声明</label>
+     </view>
+   </view>
+   <view class="entry-f">
+    <text>请保证您填写的资料正确，填写完成后需要您确认</text>
+    <view class="entry-f-btn"  catchtap='entryCkick'> 开始填写</view>
+   </view>
+</view>

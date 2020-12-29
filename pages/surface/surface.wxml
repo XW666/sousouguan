@@ -1,0 +1,6 @@
+<view class="suface">
+  <view class="suface-img"></view>
+  <view class="center-f">
+    <view class="center-btn" catchtap='nextTap'>手写签名</view>
+  </view>
+</view>

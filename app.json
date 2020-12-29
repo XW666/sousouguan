@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/accredit/accredit",
+    "pages/phone/phone",
+    "pages/entry/entry",
+    "pages/info/info",
+    "pages/basic/basic",
+    "pages/contact/contact",
+    "pages/teach/teach",
+    "pages/work/work",
+    "pages/family/family",
+    "pages/wages/wages",
+    "pages/regisfrom/regisfrom",
+    "pages/enclosure/enclosure",
+    "pages/final/final",
+    "pages/authen/authen",
+    "pages/surface/surface",
+    "pages/sign/sign",
+    "pages/signsucc/signsucc",
+    "pages/enterprise/enterprise",
+    "pages/statement/statement",
+    "pages/usersign/usersign"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5e6cd2",
+    "navigationBarTitleText": "嗖嗖管",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

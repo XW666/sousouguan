@@ -1,0 +1,14 @@
+<view class="basic">
+  <view class="contren-h">入职声明</view>
+  <view class="contern-main">
+    <view class="contren-p">
+        1、本人承诺以上各项信息材料为真实完整有效，如有不实，公司可立即无条件辞退本人。
+        2、我保证到贵公司报到前，已与原工作单位解除劳动合同等关系，并不会将原工作单位的任何商业秘密带到公司。如与原工作单位因劳动合同或商业秘密问题出现法律纠纷，我原承担一切责任。
+        3、我同意授权公司对所填信息进行核实。
+    </view>
+  </view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="basic">
+  <view class="contren-h">联系信息</view>
+  <view class="contern-main">
+    <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">手机号码</label> <text>（必填）不可编辑</text>
+        </view>
+        <view class="center-input" >
+          {{contactData.phone}}
+            <!-- <input class="weui-input" value='{{contactData.phone}}'  name="input" placeholder="请输入" /> -->
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">个人邮箱</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{contactData.personal_email}}" bindinput="bindPerEmailInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label" >工作邮箱</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{contactData.work_emil}}" bindinput="bindWorkEmailInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="required">现居地址</label> <text>（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" value="{{contactData.current_address}}"  bindinput="bindCurAddressInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+  </view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

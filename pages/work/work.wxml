@@ -1,0 +1,75 @@
+<view class="basic">
+  <view class="contren-h">工作经历</view>
+  <view class="contern-main">
+    <block wx:for="{{workData}}" wx:for-index="idx" wx:key="key">
+      <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label required">工作单位名称</label> <text class="center-text">（必填）</text>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{workData[idx].employer}}' bindinput="bindEmployerInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">职务</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{workData[idx].position}}' bindinput="bindPositionInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+     <view class="center-section-title">
+          <label class="center-label">工作开始时间</label> 
+        </view>
+        <picker mode="date" value="{{workData[idx].start_date}}" data-index='{{idx}}'  bindchange="bindStartDate">
+          <view class="center-input {{workData[idx].start_date ? '' : 'center-cor'}}">
+           {{workData[idx].start_date ? workData[idx].start_date : '请选择'}}
+          </view>
+        </picker>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">工作结束时间</label> 
+        </view>
+        <picker mode="date" value="{{workData[idx].end_date}}" data-index='{{idx}}'  bindchange="bindEndDate">
+          <view class="center-input {{workData[idx].end_date ? '' : 'center-cor'}}">
+           {{workData[idx].end_date ? workData[idx].end_date : '请选择'}}
+          </view>
+        </picker>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">证明人</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{workData[idx].witness}}' bindinput="bindWitInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">证明人联系电话</label>
+        </view>
+        <view class="center-input" >
+            <input class="weui-input" data-index='{{idx}}' value='{{workData[idx].phone}}' bindinput="bindPhoneInput"  name="input" placeholder="请输入" />
+        </view>
+     </view>
+     <view class="center-item">
+        <view class="center-section-title">
+          <label class="center-label">离职原因</label>
+        </view>
+        <view class="center-input" >
+          <textarea data-index='{{idx}}' value='{{workData[idx].reasons_leaving}}' bindinput="bindText" auto-height placeholder="请输入" />
+            <!-- <input class="weui-input" data-index='{{idx}}' value='{{workData[idx].phone}}' bindinput="bindPhoneInput"  name="input" placeholder="请输入" /> -->
+        </view>
+     </view>
+    </block>
+    <view class="center-add">
+       <view class="center-add-btn" catchtap='addTeach'>添加教育经历</view>
+    </view>
+  </view>
+  <view class="center-f">
+    <view class="prevTap" catchtap='prevTap'>上一步</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view>

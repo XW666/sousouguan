@@ -1,0 +1,26 @@
+/* pages/statement/statement.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background: #fbfbfb;
+}
+.wrapper{
+padding: 30rpx;
+font-size: 28rpx;
+}
+.ment{
+  display: flex;
+  background-color: #fff;
+  height:120rpx ;
+  line-height: 120rpx;
+  padding: 0 20rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.ment-t{
+  flex: 1;
+}
+.ment-r{
+  width: 60rpx;
+  color: #8C8C8C
+}

@@ -1,0 +1,11 @@
+<!--pages/statement/statement.wxml-->
+<view class="wrapper">
+  <view class="ment" data-type="1" catchtap='signDetail'> 
+     <view class="ment-t">待签署</view>
+     <view class="ment-r">></view>
+  </view>
+  <view class="ment" data-type="2" catchtap='signDetail'>
+    <view class="ment-t">已签署</view>
+     <view class="ment-r">></view>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="authen">
+  <view class="contren-tit">实名认证</view>
+  <view class="contren-h">上传身份证</view>
+  <view class="contern-main">
+     <view class="authen-m">
+       <view class="authen-img-tit">正面</view>
+       <view class="authen-img-h" bindtap='chooseImageJust'>
+          + 
+       </view>
+     </view>
+     <view class="authen-m">
+       <view class="authen-img-tit">反面</view>
+       <view class="authen-img-h" bindtap='chooseImageBack'>
+          + 
+       </view>
+     </view>
+  </view>
+  <view class="center-f">
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+  <view class="authen-model" hidden="{{isShow}}"></view>
+  <view class="authen-dialog" hidden="{{isShow}}">
+     <view class="authen-dialog-cen">
+        <view class="authen-dialog-tit">信息确认</view>
+        <view class="authen-dialog-main">
+           <view class="authen-dialog-m">
+             <label>姓名</label>
+             <view>{{userData.name}}</view>
+           </view>
+           <view class="authen-dialog-b">
+             <label>性 别：</label> {{userData.gender}}
+           </view>
+           <view class="authen-dialog-b">
+             <label>民 族：</label> {{userData.nation}}
+           </view>
+           <view class="authen-dialog-b">
+             <label>出生日期：</label> {{userData.birthday}}
+           </view>
+           <view class="authen-dialog-b">
+             <label>证件号码：</label> {{userData.card_code}}
+           </view>
+        </view>
+        <view class="authen-dialog-foot">
+           <view class="authen-dialog-save" catchtap="authenSave">确认</view>
+           <view class="authen-dialog-con" catchtap="authenCon">重新上传</view>
+        </view>
+     </view>
+  </view>
+</view>

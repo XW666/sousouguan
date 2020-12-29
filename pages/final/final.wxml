@@ -1,0 +1,18 @@
+<view class="final">
+  <view class="icon-box">
+    <icon class="icon-box-img" type="success" size="83"></icon>
+    <view class="icon-box-ctn" wx:if="{{type =='info'}}">
+      <view class="icon-box-title">恭喜您已经填写完成"入职登记表"</view>
+      <view class="icon-box-desc">实名认证后签署确认您填写完成的"入职登记表"</view>
+    </view>
+    <view class="icon-box-ctn" wx:if="{{type =='auth'}}">
+      <view class="icon-box-title">实名认证成功</view>
+      <view class="icon-box-desc">签署您填写完成的"入职登记表"</view>
+    </view>
+  </view>
+  <view class="center-f center-pub">
+    <view class="center-f-t" wx:if="{{type =='info'}}">进入实名认证</view>
+    <view class="center-f-t" wx:if="{{type =='auth'}}">进入签署登记表流程</view>
+    <view class="center-btn" catchtap='nextTap'>下一步</view>
+  </view>
+</view> 

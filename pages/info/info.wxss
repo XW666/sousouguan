@@ -1,0 +1,4 @@
+.info{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}

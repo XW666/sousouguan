@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "basic": "/pages/basic/basic",
+    "contact": "/pages/contact/contact",
+    "teach":"/pages/teach/teach",
+    "work":"/pages/work/work",
+    "family":"/pages/family/family",
+    "wages":"/pages/wages/wages",
+    "regisfrom":"/pages/regisfrom/regisfrom",
+    "enclosure":"/pages/enclosure/enclosure"
+  }
+}
